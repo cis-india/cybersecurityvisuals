@@ -1,2 +1,2 @@
 # cybersecurityvisuals
-Files for the CIS cybersecurity visuals project website
+Files for the CIS Cybersecurity Visuals project website.
