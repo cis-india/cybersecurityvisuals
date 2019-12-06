@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.10, user-scalable=yes"/>        
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Cybersecurity Visuals Media Handbook</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            html, body {
+              height: 100%;
+            }
+
+            body {
+              margin: 0;
+              padding: 0;
+              background: #fff;
+              color: #eee;
+              font: caption;
+              overflow: scroll;
+            }     
+
+            .popupbox {
+                font-size: 12px;
+            }
+
+            .popupbox p {
+                margin: 10px;
+            }
+
+            .highlight {
+              color:#f47c4e;
+              font-weight: bold;
+            }
+
+
+
+        </style> 
+
+        <!--        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5.1.0/themes/light-border.css" />
+        <link rel="stylesheet" href="https://unpkg.com/tippy.js@5.1.0/animations/shift-away-extreme.css" /> -->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/backdrop.css" />
+        <link rel="stylesheet" href="css/light-border.css" />
+        <link rel="stylesheet" href="css/shift-away-extreme.css" />
+    </head>
+    <body class="dragscroll">
+        <div id="scene" style="cursor: move; overflow: visible;">
+            
+            <img src="img/cis_panels_all_low_res.png" />
+
+            <div id="popA" class="animated infinite pulse fast delay-2s" style="position: absolute; top:700px; left:480px; background-image: url('img/hand.png'); width:90px; height:45px;"></div>
+
+            <div id="popB" class="animated infinite pulse fast delay-2s" style="position: absolute; top:120px; left:770px; background-image: url('img/hand.png'); width:90px; height:45px;"></div>        
+
+            <div id="popC" class="animated infinite pulse fast delay-2s" style="position: absolute; top:190px; left:1950px; background-image: url('img/hand.png'); width:90px; height:45px;"></div>     
+
+            <div id="popD" class="animated infinite pulse fast delay-2s" style="position: absolute; top:290px; left:2620px; background-image: url('img/hand.png'); width:90px; height:45px;"></div>                                 
+
+        </div>
+    </body> 
+    <!-- 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/tippy-bundle.iife.min.js"></script>
+    <script src="js/dragscroll.js"></script>
+    <script type="text/javascript">
+
+      function doTippy() {
+
+        tippy('#popA', {
+          content: '<div class="popupbox"><p>This is a depiction of individual to individual interactions, where our devices allow for mediated experiences, from a range of pure entertainment to financial transactions and everything in between. Some of the sketches are observations of people largely in common access networked spaces like cafes, which become second spaces for conversations and sometimes for filing taxes. Contrary to popular depictions of the man in the hoodie trying to take advantage of vulnerable linked devices, there were several simpler opportunities of violating somebody’s notion of private access to their data in public spaces and personal details like name (that is generally made audible in places like Starbucks), system id (that is accessible if a device is left unattended), or details over heard during a personal conversation in a public space, become data that maybe accessed by people either directly looking for it, or found through indexed or hash-tagged images on networked and multi-sited platform behaviors.</p></div>',
+          placement: 'top',
+          animation: 'shift-away-extreme',
+          theme: 'light-border',
+          sticky: false,
+          maxWidth: 350,
+          interactive: true,
+          trigger: "mouseenter click",
+          touch: 'hold'
+        });        
+
+        tippy('#popB', {
+          content: '<div class="popupbox"><p>The second panel is the first instance of trying to look at complexity from the perspective of larger institutions, that use and create data and services around itself and for individuals. On the top side, there are ethical hackers previously labeled (by projecting a caricatured notion of the Wild West) as White Hat hackers, who typically look at possible loopholes or aberrations in privacy, access protocols that might render a service vulnerable for either institutions or individuals, or both. Ethical hacking for instance may involve bug bounty hunting, that may result preventing future breaches in large volumes of user and institutional data. These activities may also result in identifying malicious intent also in the part of institutions as preying upon its users by manipulating their behavior.</p></div>',
+          placement: 'top',
+          animation: 'shift-away-extreme',
+          theme: 'light-border',
+          sticky: false,
+          maxWidth: 350,
+          interactive: true,
+          trigger: "mouseenter click",
+          touch: 'hold'
+        }); 
+
+        tippy('#popC', {
+          content: '<div class="popupbox"><p>The third panel was an exploration of how notions of user generated content (UGC) and behaviors because of it could be leveraged by larger institutions i.e. the interaction of institutions with, for or against individuals. Some of the explorations as a result, are around click-farms and behaviors of collusion. There is a small satirical attempt here to contextualize the notion of Hobbes’s Leviathan with a slightly more familiar (Indian) context of Dineshan<sup>1</sup> .This diegetic, also looks at the emergence of Dineshanal behaviors that lead to state sponsored surveillance, internet shutdowns and military coups, that is framed in ways that show the state and its citizens as an invasive agent, in some online spaces, or as justified in its actions in dominant news narratives.</p><p><sub>1 <span class="highlight">Dineshan</span> is a play on the phrase: <span class="highlight">“The nation wants to know.”</span> A catchphrase popularized by news anchor Arnab Goswami, where he shifts the intent (from himself) to know about possible ulterior motives of politicians, activists and anybody else, who sits across him behind the news desk. He instead chooses to be the representative of the entire nation. The play on the phrase, is coming from an overheard joke, where a Malayali overhears the news one day, and hears Arnab. He is curious to know who this Dineshan is and why he wants to know so much about everybody and everything.</sub></p></div>',
+          placement: 'top',
+          animation: 'shift-away-extreme',
+          theme: 'light-border',
+          sticky: false,
+          maxWidth: 350,
+          interactive: true,
+          trigger: "mouseenter click",
+          touch: 'hold'
+        }); 
+
+        tippy('#popD', {
+          content: '<div class="popupbox"><p>The fourth panel started out as a composition that shows interactions between and across different institutions and nation states. It carries forward the concept of a corpus of consent, manufactured or elected, through computer mediated spaces. Using the framework of Dineshan, this panel maybe considered as an interaction of many dineshans among themselves, against other dineshans and the impact it may have on concepts of privacy, security and governance in a networked age. Once the composition was created, it also became a point of reflection of local or personal behaviors on mediated platforms. As depicted in one of the meme pages about existential dread that emanates from interacting with others on computer mediated platforms, the instagram user @sadgurlmemez<sup>2</sup>, describes attributes of being dineshanal at a more local and personal level, where one aspect of it is curatorial in nature, where one performs many different aspects of themselves, in public computer mediated spaces, thereby creating the data trail that has been seen from panel one.</p> <p><sub>2 "when you realize that your compulsion to air out all your dirty laundry on social media derives directly from our modern day reverse-panoptical society where we\'re no longer afraid that somebody\'s watching us but more afraid that nobody\'s watching or listening to us thus trapping ourselves in this online prison of self driven surveillance by divulging as much as possible about our lives and thoughts on a predatory digital data aggregating interface." -and now nothing\'s under control.</sub></p></div>',
+          placement: 'top',
+          animation: 'shift-away-extreme',
+          theme: 'light-border',
+          sticky: false,
+          maxWidth: 350,
+          interactive: true,
+          trigger: "mouseenter click",
+          touch: 'hold'
+        });   
+        
+      }   
+
+      $(document).ready(function() {
+/*        var $panzoom = $("#scene").panzoom({
+          disableZoom: true
+        });
+
+        $("#scene").on('mousewheel.focal', function( e ) {
+          e.preventDefault();
+          var delta = e.delta || e.originalEvent.wheelDelta;
+          var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+          $("#scene").panzoom('zoom', zoomOut, {
+            increment: 0.1,
+            focal: e
+          });
+        });*/
+
+        doTippy();
+
+      });
+        
+
+
+    </script>
+</html>
